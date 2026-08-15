@@ -35,7 +35,7 @@ app.get("/api/test-notification", (req, res) => {
     });
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 server.listen(PORT, () => {
     console.log(`Zynxis Week 7 server running on port ${PORT}`);
